@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+<?xml version="1.0.2.3"?>
 <!DOCTYPE project>
 
 <project name="StartupApplicationForm-portlet" basedir="." default="deploy">
