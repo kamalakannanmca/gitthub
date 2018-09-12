@@ -1,0 +1,137 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping default-lazy="false" auto-import="false">
+	<import class="com.sbi.StartUp.model.CapitalInf" />
+	<import class="com.sbi.StartUp.model.ResumeDtls" />
+	<import class="com.sbi.StartUp.model.SbiStartUp" />
+	<class name="com.sbi.StartUp.model.impl.CapitalInfImpl" table="SbiStartUp_CapitalInf">
+		<cache usage="read-write" />
+		<id name="InfRefId" type="long">
+			<generator class="assigned" />
+		</id>
+		<property name="createDate" type="org.hibernate.type.TimestampType" />
+		<property name="modifiedDate" type="org.hibernate.type.TimestampType" />
+		<property name="RegNum" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="cp_promoters_name" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="cp_promoters_address" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="cp_promoters_amount" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+	</class>
+	<class name="com.sbi.StartUp.model.impl.ResumeDtlsImpl" table="SbiStartUp_ResumeDtls">
+		<cache usage="read-write" />
+		<id name="ResumeId" type="long">
+			<generator class="assigned" />
+		</id>
+		<property name="createDate" type="org.hibernate.type.TimestampType" />
+		<property name="modifiedDate" type="org.hibernate.type.TimestampType" />
+		<property name="RegNum" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="Name" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="Email" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="Mnumber" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="Dob" type="org.hibernate.type.TimestampType" />
+		<property name="address_line_1" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="address_line_2" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="address_landmark" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="address_city" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="address_pin" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="address_state" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="perm_address_line_1" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="perm_address_line_2" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="perm_address_landmark" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="perm_address_city" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="perm_address_pin" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="perm_address_state" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="Pan" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="AadharNum" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="CarrerAspect" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="KeyITSkill" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="CertfTra" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="EmpyHistory" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="CoreComp" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="Accomplishment" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="Academics" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="status" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="flag" type="com.liferay.portal.dao.orm.hibernate.BooleanType" />
+		<property name="indexno" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+	</class>
+	<class name="com.sbi.StartUp.model.impl.SbiStartUpImpl" table="SbiStartUp_SbiStartUp">
+		<cache usage="read-write" />
+		<id name="regnum" type="java.lang.String">
+			<generator class="assigned" />
+		</id>
+		<property name="userName" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="createDate" type="org.hibernate.type.TimestampType" />
+		<property name="modifiedDate" type="org.hibernate.type.TimestampType" />
+		<property name="registered_name" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="date_of_establishment" type="org.hibernate.type.TimestampType" />
+		<property name="constitution" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="address_line_1" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="address_line_2" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="address_landmark" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="address_city" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="address_pin" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="address_state" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="corporate_email" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="corporate_website" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="initial_founders" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="current_promoters_name" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="noofemp" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="description_of_product" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="initial_capital" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="monetary_value" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="business_model" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="current_capital" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="capital_infusion" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="Loans_availed" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="valuer_name" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="valuation_date" type="org.hibernate.type.TimestampType" />
+		<property name="valuation_amount_rs" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="loan_avail_source" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="loan_avail_rs" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="gross_revenue_year1" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="gross_revenue_rs1" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="gross_revenue_year2" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="gross_revenue_rs2" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="gross_revenue_year3" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="gross_revenue_rs3" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="ebidta_year1" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="ebidta_rs1" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="ebidta_year2" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="ebidta_rs2" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="ebidta_year3" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="ebidta_rs3" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="gross_revenue_projected_year1" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="projected_revenue_rs1" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="gross_revenue_projected_year2" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="projected_revenue_rs2" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="gross_revenue_projected_year3" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="projected_revenue_rs3" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="projected_ebidta_year1" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="projected_ebidta_rs1" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="projected_ebidta_year2" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="projected_ebidta_rs2" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="projected_ebidta_year3" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="projected_ebidta_rs3" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="projected_net_profit_year1" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="projected_net_profit_rs1" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="projected_net_profit_year2" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="projected_net_profit_rs2" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="projected_net_profit_year3" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="projected_net_profit_rs3" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="net_profit_year1" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="net_profit_rs1" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="net_profit_year2" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="net_profit_rs2" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="net_profit_year3" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="net_profit_rs3" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="financial_bank_engagement" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="financial_assistance" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="financial_assi_purp" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="agreeable_process" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="gsr_department" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="startupindia" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="incubator" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="status" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="flag" type="com.liferay.portal.dao.orm.hibernate.BooleanType" />
+	</class>
+</hibernate-mapping>

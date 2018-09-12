@@ -1,0 +1,222 @@
+/*----- CSS Developed By Gopi -----*/
+/*RESET.CSS*/
+a {
+  text-decoration: none; }
+
+img {
+  border: 0;
+  vertical-align: middle; }
+
+.clearfix {
+  height: 0;
+  clear: both;
+  visibility: hidden; }
+
+#content_area {
+  width: 760px;
+  margin: 10px auto;
+  padding: 10px;
+  overflow: hidden;
+  border: 1px solid #e6f5ff;
+  position: relative; }
+
+#content_area h2 {
+  color: #005c99;
+  font-weight: bold;
+  font-size: 15px;
+  padding: 0 0 15px 5px; }
+
+.row {
+  margin: 10px 0;
+  overflow: hidden; }
+
+.start {
+  float: left;
+  font-size: 14px;
+  font-weight: bold;
+  color: #0093ae; }
+
+.fields {
+  float: right; }
+
+.fields sup, .row sup {
+  color: #ff0012;
+  margin: 0 5px 0 0; }
+
+.row_box {
+  float: left;
+  width: 350px;
+  margin: 0 15px 0 0; }
+
+.noSpc {
+  margin-right: 0 !important;
+  margin-bottom: 0 !important; }
+
+.row label {
+  font-weight: bold;
+  display: block;
+  margin: 0 0 10px; }
+
+/* Tab Menu*/
+.tabs-menu {
+  height: 30px;
+  float: left;
+  clear: both; }
+
+.tabs-menu li {
+  height: 30px;
+  line-height: 30px;
+  float: left;
+  margin-right: 5px;
+  background-color: #78c188;
+  border-top: 1px solid #62b774;
+  border-right: 1px solid #62b774;
+  border-left: 1px solid #62b774; }
+
+.tabs-menu li.current {
+  position: relative;
+  background-color: #ffffff;
+  /*border-bottom: 1px solid #ffffff;*/
+  z-index: 5; }
+
+.tabs-menu li a {
+  padding: 10px;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-decoration: none; }
+
+.tabs-menu .current a {
+  color: #206020;
+  font-weight: bold; }
+
+.tab {
+  border: 1px solid #62b774;
+  background-color: #fff;
+  float: left;
+  margin-bottom: 20px;
+  width: auto; }
+
+.tab-content {
+  width: 718px;
+  padding: 20px;
+  display: none; }
+
+#tab-1 {
+  display: block; }
+
+/* Tab Menu */
+#status_banner {
+  background: url("../images/status.jpg") no-repeat 0 0;
+  position: absolute;
+  bottom: 20px;
+  right: 0;
+  width: 305px;
+  height: 157px; }
+
+#content_area {
+  background-color: #ffffff; }
+
+.err-msg {
+  border: 0px solid lightgray;
+  color: red;
+  margin: 10px 0px; }
+
+/*----CAPTCHA CSS Added By Babloo from 6_SEP_2016----*/
+input[type=button] {
+  display: inline-block;
+  zoom: 1;
+  display: inline;
+  vertical-align: baseline;
+  margin: 0 2px;
+  outline: none;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  font: 14px/100% Arial, Helvetica, sans-serif;
+  -webkit-border-radius: .5em;
+  -moz-border-radius: .5em;
+  border-radius: .5em;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  font-weight: bold;
+  padding: 10px 15px;
+  line-height: 25px;
+  float: left;
+  width: 165px; }
+
+.taglib-captcha {
+  width: 100%;
+  float: left;
+  margin: 1em 0; }
+
+.taglib-captcha .captcha-container {
+  padding: 0px 0px;
+  width: 500px;
+  margin: 0px 0px 15px 0px !important;
+  float: left; }
+
+.captcha-right-imgdiv {
+  float: left !important;
+  width: 255px !important;
+  height: auto !important; }
+
+.captcha-left-imgdiv {
+  float: right !important;
+  width: 240px !important;
+  height: auto !important;
+  padding-top: 0px !important; }
+
+.captcha-left-imgdiv-left {
+  float: left !important;
+  width: 150px !important;
+  padding: 0px !important;
+  height: auto;
+  margin-top: 5px !important; }
+
+.aui-field .aui-field-text.aui-form-validator-error-container {
+  float: left; }
+
+.aui-field-content {
+  width: 240px;
+  float: left; }
+
+.aui-field-label {
+  width: 244px;
+  float: left; }
+
+input#reg_numq {
+  width: 230px  !important; }
+
+.captcha-right-imgdiv .aui-field-content .aui-field-element input.aui-field-input-text {
+  width: 230px;
+  float: left; }
+
+/*
+.captcha-left-imgdiv .captcha-left-imgdiv-left img.captcha{margin:25px 0px 0px 0px;padding-bottom: 0px !important;}*/
+#refreshCaptchaActivity1 {
+  position: absolute  !important;
+  right: 318px !important;
+  z-index: 99  !important;
+  top: 60px  !important; }
+
+.captcha-left-imgdiv-right-refreshbtn {
+  float: left  !important;
+  padding-top: 20px  !important; }
+
+.captcha-right-imgdiv .aui-field-content .aui-field-element input.aui-field-input-text {
+  width: 230px !important; }
+
+/* button css */
+.row input[type=button] {
+  left: 0px;
+  width: auto;
+  float: left;
+  background: #29a3cc none repeat scroll 0 0;
+  color: #ffffff;
+  text-shadow: none;
+  border-radius: 0px;
+  border: 1px solid #20afc5;
+  padding: 4px;
+  margin: 0px 10px; }
+

@@ -1,0 +1,62 @@
+ .row{
+	margin:10px 0;
+	overflow:hidden;
+}
+#myTable a{
+	background:#1c7fa4;
+	padding:5px 7px;
+}
+
+.table td{
+	text-align:center;
+}
+
+.table th{
+	background:#177F90 !important;
+	color:#fff;
+	padding:7px;
+	text-align:center;
+}
+
+#myTable{
+	position:relative;
+	padding:15px 0 0;
+}
+
+.dataTables_length select, #myTable select{
+	width:auto
+	border:1px solid #ccc;
+}
+
+.dataTables_wrapper .dataTables_filter input{
+	border:1px solid #ccc;
+	padding:3px;
+}
+.dataTables_wrapper .dataTables_filter{
+padding-top:6px;
+}
+.change{
+padding : 4px 8px !important;
+}
+
+.regPdf:hover{
+
+background: none repeat scroll 0 0 #CCCCCC;
+    color: #FF0000;
+    cursor: pointer;
+    text-decoration: underline;
+}  
+a.previous.paginate_button.paginate_button_disabled:hover{background:none !important}
+a.next.paginate_button:hover{background:none !important}
+a.previous.paginate_button:hover{background:none !important}
+
+#userTable_wrapper .dataTables_info{margin-top: 15px !important;} 
+.dataTables_wrapper .dataTables_paginate .paginate_active{
+box-sizing:border-box;display: inline-block;min-width: 1.5em;padding: 4px 8px;margin-left: 2px;text-align: center;text-decoration: none !important;color: #fff !important;
+cursor: pointer;border: 1px solid transparent;text-decoration:underline !important;border: 1px solid #0d5f73;background: #37b4d3;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_active:hover{color: #fff !important;border: 1px solid #0d5f73;background: #37b4d3;text-decoration:underline !important;}
+.aligndate label{margin: 0px 10px 0px 0px;}
+.aligntodate label{margin: 0px 10px 0px 20px;}
+.adminsearch{margin:0px 13px 0px 13px;}
+.adminsear_mar{margin:7px 0px 0px 0px !important;float:left !important;}

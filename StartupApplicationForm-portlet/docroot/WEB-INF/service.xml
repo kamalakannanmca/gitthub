@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE service-builder PUBLIC "-//Liferay//DTD Service Builder 6.1.0//EN" "http://www.liferay.com/dtd/liferay-service-builder_6_1_0.dtd">
+<service-builder package-path="com.sbi.StartUp">
+	<author>MAH97223</author>
+	<namespace>SbiStartUp</namespace>
+
+	<entity name="SbiStartUp" local-service="true" remote-service="true">
+
+		<!-- PK fields -->
+
+		<column name="regnum" type="String" primary="true" />
+
+		<!-- Audit fields -->
+
+		<column name="userName" type="String" />
+		<column name="createDate" type="Date" />
+		<column name="modifiedDate" type="Date" />
+
+		<!-- Other fields -->
+
+	<column name="registered_name" type="String" />
+	<column name="date_of_establishment" type="Date" />
+	<column name="constitution" type="String" />
+	<column name="address_line_1" type="String" />
+	<column name="address_line_2" type="String" />
+	<column name="address_landmark" type="String" />
+	<column name="address_city" type="String" />
+	 
+	<column name="address_pin" type="String" />
+	<column name="address_state" type="String" />
+		<column name="corporate_email" type="String" />
+	<column name="corporate_website" type="String" />
+	<column name="initial_founders" type="String" />
+	<column name="current_promoters_name" type="String" />
+	<column name="noofemp" type="String" />
+
+	
+	<column name="description_of_product" type="String" />
+	<column name="initial_capital" type="String" />
+	<column name="monetary_value" type="String" />
+	<column name="business_model" type="String" />
+	<column name="current_capital" type="String" />
+	
+	<column name="capital_infusion" type="String" />
+	 
+	 
+	<column name="Loans_availed" type="String" />
+	<column name="valuer_name" type="String" />
+	<column name="valuation_date" type="Date" />
+	<column name="valuation_amount_rs" type="String" />
+	<column name="loan_avail_source" type="String" />
+	<column name="loan_avail_rs" type="String" />
+<!-- 	<column name="gross_revenue" type="String" /> -->
+	<column name="gross_revenue_year1" type="String" />
+	<column name="gross_revenue_rs1" type="String" />
+	<column name="gross_revenue_year2" type="String" />
+	<column name="gross_revenue_rs2" type="String" />
+	<column name="gross_revenue_year3" type="String" />
+	<column name="gross_revenue_rs3" type="String" />
+<!-- 	<column name="ebidta" type="String" /> -->
+	<column name="ebidta_year1" type="String" />
+	<column name="ebidta_rs1" type="String" />
+	<column name="ebidta_year2" type="String" />
+
+	<column name="ebidta_rs2" type="String" />
+	<column name="ebidta_year3" type="String" />
+	<column name="ebidta_rs3" type="String" />
+ 
+	<column name="gross_revenue_projected_year1" type="String" />
+	<column name="projected_revenue_rs1" type="String" />
+	<column name="gross_revenue_projected_year2" type="String" />
+	<column name="projected_revenue_rs2" type="String" />
+	<column name="gross_revenue_projected_year3" type="String" />
+	<column name="projected_revenue_rs3" type="String" />
+	
+	<column name="projected_ebidta_year1" type="String" />
+	<column name="projected_ebidta_rs1" type="String" />
+	<column name="projected_ebidta_year2" type="String" />
+
+	<column name="projected_ebidta_rs2" type="String" />
+	<column name="projected_ebidta_year3" type="String" />
+	<column name="projected_ebidta_rs3" type="String" />
+	
+	<column name="projected_net_profit_year1" type="String" />
+	<column name="projected_net_profit_rs1" type="String" />
+	
+	<column name="projected_net_profit_year2" type="String" />
+	<column name="projected_net_profit_rs2" type="String" />
+	
+	<column name="projected_net_profit_year3" type="String" />
+	<column name="projected_net_profit_rs3" type="String" />
+	
+	<column name="net_profit_year1" type="String" />
+	<column name="net_profit_rs1" type="String" />
+	<column name="net_profit_year2" type="String" />
+	<column name="net_profit_rs2" type="String" />
+	<column name="net_profit_year3" type="String" />
+	<column name="net_profit_rs3" type="String" />
+	
+	
+	<column name="financial_bank_engagement" type="String" />
+	<column name="financial_assistance" type="String" />
+	<column name="financial_assi_purp" type="String" />
+ 
+	<column name="agreeable_process" type="String" />
+	<column name="gsr_department" type="String" />
+	<column name="startupindia" type="String" />
+	<column name="incubator" type="String" />
+	
+	<column name="status" type="String" />
+	<column name="flag" type="boolean"/>
+
+		<!-- Order -->
+
+		<order by="asc">
+			<order-column name="createDate" />
+		</order>
+
+		<!-- Finder methods -->
+
+		<finder name="createDate" return-type="Collection">
+			<finder-column name="createDate" />
+		</finder>
+	</entity>
+	<entity name="ResumeDtls" local-service="true" remote-service="true">
+
+		<!-- PK fields -->
+
+		<column name="ResumeId" type="long" primary="true" />
+
+		<!-- Audit fields -->
+	
+		<column name="createDate" type="Date" />
+		<column name="modifiedDate" type="Date" />
+
+		<!-- Other fields -->
+		<column name="RegNum" type="String"/>
+		<column name="Name" type="String" />
+		<column name="Email" type="String" />
+		<column name="Mnumber" type="String" />
+		<column name="Dob" type="Date" />
+		<column name="address_line_1" type="String" />
+		<column name="address_line_2" type="String" />
+		<column name="address_landmark" type="String" />
+		<column name="address_city" type="String" />
+		<column name="address_pin" type="String" />
+		<column name="address_state" type="String" />
+		<column name="perm_address_line_1" type="String" />
+		<column name="perm_address_line_2" type="String" />
+		<column name="perm_address_landmark" type="String" />
+		<column name="perm_address_city" type="String" />
+		<column name="perm_address_pin" type="String" />
+		<column name="perm_address_state" type="String" /> 
+		 
+		<column name="Pan" type="String" />
+		<column name="AadharNum" type="String" />
+		<column name="CarrerAspect" type="String" />
+		<column name="KeyITSkill" type="String" />
+		 <column name="CertfTra" type="String" />
+		 <column name="EmpyHistory" type="String" />
+		 <column name="CoreComp" type="String" />
+		 <column name="Accomplishment" type="String" />
+		 <column name="Academics" type="String" />
+		 <column name="status" type="String" />
+		 <column name="flag" type="boolean"/>
+		 <column name="indexno" type="String"/>
+		 
+
+		<!-- Order -->
+
+		<order by="asc">
+			<order-column name="createDate" />
+		</order>
+
+		<!-- Finder methods -->
+
+		<finder name="createDate" return-type="Collection">
+			<finder-column name="createDate" />
+		</finder>
+	</entity>
+	<entity name="CapitalInf" local-service="true" remote-service="true">
+
+		<!-- PK fields -->
+
+		<column name="InfRefId" type="long" primary="true" />
+		
+			<column name="createDate" type="Date" />
+		<column name="modifiedDate" type="Date" />
+		<column name="RegNum" type="String"/>
+		<column name="cp_promoters_name" type="String" />
+		<column name="cp_promoters_address" type="String" />
+		<column name="cp_promoters_amount" type="String" />
+		<order by="asc">
+			<order-column name="createDate" />
+		</order>
+
+		<!-- Finder methods -->
+
+		<finder name="createDate" return-type="Collection">
+			<finder-column name="createDate" />
+		</finder>
+		</entity>
+</service-builder>

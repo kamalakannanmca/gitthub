@@ -1,0 +1,1 @@
+Liferay.Service.register("Liferay.Service.SbiStartUp", "com.sbi.StartUp.service", "StartupApplicationForm-portlet");

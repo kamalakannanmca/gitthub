@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" default-destroy-method="destroy" default-init-method="afterPropertiesSet" xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+	<bean id="com.sbi.StartUp.service.CapitalInfLocalService" class="com.sbi.StartUp.service.impl.CapitalInfLocalServiceImpl" />
+	<bean id="com.sbi.StartUp.service.CapitalInfService" class="com.sbi.StartUp.service.impl.CapitalInfServiceImpl" />
+	<bean id="com.sbi.StartUp.service.persistence.CapitalInfPersistence" class="com.sbi.StartUp.service.persistence.CapitalInfPersistenceImpl" parent="basePersistence" />
+	<bean id="com.sbi.StartUp.service.ResumeDtlsLocalService" class="com.sbi.StartUp.service.impl.ResumeDtlsLocalServiceImpl" />
+	<bean id="com.sbi.StartUp.service.ResumeDtlsService" class="com.sbi.StartUp.service.impl.ResumeDtlsServiceImpl" />
+	<bean id="com.sbi.StartUp.service.persistence.ResumeDtlsPersistence" class="com.sbi.StartUp.service.persistence.ResumeDtlsPersistenceImpl" parent="basePersistence" />
+	<bean id="com.sbi.StartUp.service.SbiStartUpLocalService" class="com.sbi.StartUp.service.impl.SbiStartUpLocalServiceImpl" />
+	<bean id="com.sbi.StartUp.service.SbiStartUpService" class="com.sbi.StartUp.service.impl.SbiStartUpServiceImpl" />
+	<bean id="com.sbi.StartUp.service.persistence.SbiStartUpPersistence" class="com.sbi.StartUp.service.persistence.SbiStartUpPersistenceImpl" parent="basePersistence" />
+</beans>

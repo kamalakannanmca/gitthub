@@ -1,0 +1,175 @@
+<?xml version="1.0"?>
+
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.0" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence/orm http://java.sun.com/xml/ns/persistence/orm_1_0.xsd">
+	<persistence-unit-metadata>
+		<xml-mapping-metadata-complete/>
+		<persistence-unit-defaults>
+			<access>PROPERTY</access>
+		</persistence-unit-defaults>
+	</persistence-unit-metadata>
+	<mapped-superclass class="com.sbi.StartUp.model.impl.CapitalInfModelImpl">
+		<attributes>
+			<id name="InfRefId" />
+			<basic name="createDate">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="modifiedDate">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="RegNum" />
+			<basic name="cp_promoters_name" />
+			<basic name="cp_promoters_address" />
+			<basic name="cp_promoters_amount" />
+			<transient name="modelAttributes" />
+			<transient name="primaryKey" />
+			<transient name="primaryKeyObj" />
+		</attributes>
+	</mapped-superclass>
+	<mapped-superclass class="com.sbi.StartUp.model.impl.ResumeDtlsModelImpl">
+		<attributes>
+			<id name="ResumeId" />
+			<basic name="createDate">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="modifiedDate">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="RegNum" />
+			<basic name="Name" />
+			<basic name="Email" />
+			<basic name="Mnumber" />
+			<basic name="Dob">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="address_line_1" />
+			<basic name="address_line_2" />
+			<basic name="address_landmark" />
+			<basic name="address_city" />
+			<basic name="address_pin" />
+			<basic name="address_state" />
+			<basic name="perm_address_line_1" />
+			<basic name="perm_address_line_2" />
+			<basic name="perm_address_landmark" />
+			<basic name="perm_address_city" />
+			<basic name="perm_address_pin" />
+			<basic name="perm_address_state" />
+			<basic name="Pan" />
+			<basic name="AadharNum" />
+			<basic name="CarrerAspect" />
+			<basic name="KeyITSkill" />
+			<basic name="CertfTra" />
+			<basic name="EmpyHistory" />
+			<basic name="CoreComp" />
+			<basic name="Accomplishment" />
+			<basic name="Academics" />
+			<basic name="status" />
+			<basic name="flag" />
+			<basic name="indexno" />
+			<transient name="modelAttributes" />
+			<transient name="primaryKey" />
+			<transient name="primaryKeyObj" />
+		</attributes>
+	</mapped-superclass>
+	<mapped-superclass class="com.sbi.StartUp.model.impl.SbiStartUpModelImpl">
+		<attributes>
+			<id name="regnum" />
+			<basic name="userName" />
+			<basic name="createDate">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="modifiedDate">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="registered_name" />
+			<basic name="date_of_establishment">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="constitution" />
+			<basic name="address_line_1" />
+			<basic name="address_line_2" />
+			<basic name="address_landmark" />
+			<basic name="address_city" />
+			<basic name="address_pin" />
+			<basic name="address_state" />
+			<basic name="corporate_email" />
+			<basic name="corporate_website" />
+			<basic name="initial_founders" />
+			<basic name="current_promoters_name" />
+			<basic name="noofemp" />
+			<basic name="description_of_product" />
+			<basic name="initial_capital" />
+			<basic name="monetary_value" />
+			<basic name="business_model" />
+			<basic name="current_capital" />
+			<basic name="capital_infusion" />
+			<basic name="Loans_availed" />
+			<basic name="valuer_name" />
+			<basic name="valuation_date">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="valuation_amount_rs" />
+			<basic name="loan_avail_source" />
+			<basic name="loan_avail_rs" />
+			<basic name="gross_revenue_year1" />
+			<basic name="gross_revenue_rs1" />
+			<basic name="gross_revenue_year2" />
+			<basic name="gross_revenue_rs2" />
+			<basic name="gross_revenue_year3" />
+			<basic name="gross_revenue_rs3" />
+			<basic name="ebidta_year1" />
+			<basic name="ebidta_rs1" />
+			<basic name="ebidta_year2" />
+			<basic name="ebidta_rs2" />
+			<basic name="ebidta_year3" />
+			<basic name="ebidta_rs3" />
+			<basic name="gross_revenue_projected_year1" />
+			<basic name="projected_revenue_rs1" />
+			<basic name="gross_revenue_projected_year2" />
+			<basic name="projected_revenue_rs2" />
+			<basic name="gross_revenue_projected_year3" />
+			<basic name="projected_revenue_rs3" />
+			<basic name="projected_ebidta_year1" />
+			<basic name="projected_ebidta_rs1" />
+			<basic name="projected_ebidta_year2" />
+			<basic name="projected_ebidta_rs2" />
+			<basic name="projected_ebidta_year3" />
+			<basic name="projected_ebidta_rs3" />
+			<basic name="projected_net_profit_year1" />
+			<basic name="projected_net_profit_rs1" />
+			<basic name="projected_net_profit_year2" />
+			<basic name="projected_net_profit_rs2" />
+			<basic name="projected_net_profit_year3" />
+			<basic name="projected_net_profit_rs3" />
+			<basic name="net_profit_year1" />
+			<basic name="net_profit_rs1" />
+			<basic name="net_profit_year2" />
+			<basic name="net_profit_rs2" />
+			<basic name="net_profit_year3" />
+			<basic name="net_profit_rs3" />
+			<basic name="financial_bank_engagement" />
+			<basic name="financial_assistance" />
+			<basic name="financial_assi_purp" />
+			<basic name="agreeable_process" />
+			<basic name="gsr_department" />
+			<basic name="startupindia" />
+			<basic name="incubator" />
+			<basic name="status" />
+			<basic name="flag" />
+			<transient name="modelAttributes" />
+			<transient name="primaryKey" />
+			<transient name="primaryKeyObj" />
+		</attributes>
+	</mapped-superclass>
+	<entity class="com.sbi.StartUp.model.impl.CapitalInfImpl" name="CapitalInf">
+		<table name="SbiStartUp_CapitalInf" />
+		<attributes />
+	</entity>
+	<entity class="com.sbi.StartUp.model.impl.ResumeDtlsImpl" name="ResumeDtls">
+		<table name="SbiStartUp_ResumeDtls" />
+		<attributes />
+	</entity>
+	<entity class="com.sbi.StartUp.model.impl.SbiStartUpImpl" name="SbiStartUp">
+		<table name="SbiStartUp_SbiStartUp" />
+		<attributes />
+	</entity>
+</entity-mappings>
